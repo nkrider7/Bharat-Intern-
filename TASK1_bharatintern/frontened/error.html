@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Error</title>
+    <style>
+      .container {
+        background: rgba(255, 255, 255, 0.655);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(82, 8, 151);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .side-shape {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+      }
+
+      .left-shape {
+        top: 50%;
+        left: -100px;
+      }
+
+      .right-shape {
+        top: 50%;
+        right: -100px;
+      }
+
+      .left-shape::before,
+      .right-shape::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+      }
+
+      .left-shape::before {
+        top: -50px;
+        left: -50px;
+      }
+
+      .right-shape::before {
+        top: -50px;
+        right: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-shape left-shape"></div>
+    <div class="side-shape right-shape"></div>
+    <div class="container">
+      <h1>User already exists</h1>
+    </div>
+  </body>
+</html>

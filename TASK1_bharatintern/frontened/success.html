@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Successful</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(64, 6, 158);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.823);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .side-shape {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+        z-index: -1;
+      }
+
+      .left-shape {
+        top: 0;
+        left: -100px;
+        transform: rotate(45deg);
+      }
+
+      .right-shape {
+        top: 0;
+        right: -100px;
+        transform: rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-shape left-shape"></div>
+    <div class="side-shape right-shape"></div>
+    <div class="container">
+      <h1>Registration Successful</h1>
+      <br />
+      <p>Thank you for registering.</p>
+    </div>
+  </body>
+</html>
